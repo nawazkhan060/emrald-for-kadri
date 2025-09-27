@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kadri Gems</title>
+  <title>Kadri Gems | Premium Natural Emeralds</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts - Professional weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -20,18 +20,19 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #0a0a0a, #121212);
-      color: #e0e0e0;
+      background: linear-gradient(135deg, #0b0b0f 0%, #121218 100%);
+      color: #f0f0f5;
       overflow-x: hidden;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     /* Header */
     header {
-      padding: 20px;
+      padding: 25px 20px;
       text-align: center;
-      background: rgba(17, 17, 17, 0.95);
-      border-bottom: 1px solid #333;
+      background: rgba(8, 8, 12, 0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0, 255, 179, 0.15);
       position: relative;
     }
 
@@ -39,236 +40,266 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
 
     header img {
-      height: 80px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 255, 179, 0.25);
+      height: 85px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 255, 179, 0.28);
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.03);
     }
 
     header h1 {
-      font-size: 2.4rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
       color: #00ffb3;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      text-shadow: 0 0 8px rgba(0, 255, 179, 0.4);
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 10px rgba(0, 255, 179, 0.3);
     }
 
-    /* Rotating Emerald */
-    .emerald-container {
+    /* Rotating Emerald - PNG with transparency */
+    .emerald-showcase {
       display: flex;
       justify-content: center;
-      margin: 40px auto;
-      width: 220px;
-      height: 220px;
+      margin: 45px auto;
+      position: relative;
+    }
+
+    .emerald-container {
+      width: 240px;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .emerald-container img {
       width: 100%;
       height: auto;
-      max-width: 220px;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(0, 255, 179, 0.35);
-      animation: rotate 20s linear infinite;
-      transition: transform 0.3s ease;
+      max-width: 240px;
+      /* PNG supports transparency - no background needed */
+      animation: rotate 22s linear infinite;
+      transition: transform 0.4s ease, filter 0.3s ease;
+      filter: drop-shadow(0 0 20px rgba(0, 255, 179, 0.4));
     }
 
     .emerald-container img:hover {
       animation-play-state: paused;
-      transform: scale(1.05);
+      transform: scale(1.08);
+      filter: drop-shadow(0 0 30px rgba(0, 255, 179, 0.6));
     }
 
     @keyframes rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     /* Content Section */
     .content {
-      padding: 30px 20px;
-      max-width: 800px;
+      padding: 40px 25px;
+      max-width: 850px;
       margin: 0 auto;
       text-align: center;
     }
 
     .content h2 {
+      font-family: 'Playfair Display', serif;
       color: #00ffb3;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      font-weight: 600;
+      margin-bottom: 24px;
+      font-size: 2.1rem;
+      font-weight: 700;
     }
 
     .content p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: #ccc;
-      padding: 0 10px;
+      font-size: 1.15rem;
+      color: #d0d0e0;
+      padding: 0 15px;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    /* Emerald Boxes */
+    /* Gemstone Gallery */
     .emerald-section {
-      padding: 30px 10px;
-      background: rgba(20, 20, 20, 0.7);
-      margin: 30px auto;
-      border-radius: 12px;
-      max-width: 1100px;
+      padding: 35px 15px;
+      background: rgba(15, 15, 22, 0.6);
+      margin: 40px auto;
+      border-radius: 16px;
+      max-width: 1150px;
+      border: 1px solid rgba(0, 255, 179, 0.08);
     }
 
     .emerald-section h2 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       color: #00ffb3;
-      font-size: 1.8rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
     }
 
     .emerald-boxes {
       display: flex;
       flex-wrap: wrap;
-      gap: 22px;
       justify-content: center;
+      gap: 28px;
       padding: 0 10px;
     }
 
     .emerald-box {
-      background: #111;
-      width: 180px;
-      border-radius: 10px;
+      background: rgba(20, 20, 28, 0.8);
+      width: 200px;
+      border-radius: 14px;
       overflow: hidden;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(0, 255, 179, 0.1);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(0, 255, 179, 0.12);
     }
 
     .emerald-box:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 10px 25px rgba(0, 255, 179, 0.25);
-      border-color: rgba(0, 255, 179, 0.3);
+      transform: translateY(-12px) scale(1.03);
+      box-shadow: 0 14px 30px rgba(0, 255, 179, 0.28);
+      border-color: rgba(0, 255, 179, 0.35);
     }
 
     .emerald-box img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
-      transition: transform 0.4s ease;
+      transition: transform 0.5s ease;
     }
 
     .emerald-box:hover img {
-      transform: scale(1.08);
+      transform: scale(1.12);
     }
 
     .emerald-box h3 {
-      padding: 15px;
+      padding: 18px 15px;
       color: #00ffb3;
-      font-weight: 500;
-      font-size: 1.1rem;
-      background: rgba(0, 0, 0, 0.4);
+      font-weight: 600;
+      font-size: 1.15rem;
+      background: rgba(0, 0, 0, 0.35);
     }
 
     /* Footer */
     footer {
-      margin-top: 60px;
-      padding: 25px 20px;
-      background: rgba(17, 17, 17, 0.95);
+      margin-top: 70px;
+      padding: 35px 20px;
+      background: rgba(8, 8, 12, 0.9);
       text-align: center;
-      border-top: 1px solid #333;
+      border-top: 1px solid rgba(0, 255, 179, 0.1);
     }
 
     footer p {
       color: #00ffb3;
-      margin-bottom: 15px;
-      font-size: 1.2rem;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+      font-weight: 500;
     }
 
     .social-icons {
-      margin: 15px 0;
+      margin: 20px 0;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 22px;
     }
 
     .social-icons a {
       color: #00ffb3;
-      font-size: 26px;
-      transition: color 0.3s, transform 0.3s;
-      display: inline-block;
+      font-size: 28px;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all 0.35s ease;
     }
 
     .social-icons a:hover {
       color: white;
-      transform: translateY(-3px);
+      background: rgba(0, 255, 179, 0.25);
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 255, 179, 0.35);
     }
 
     address {
       display: block;
-      margin-top: 20px;
+      margin-top: 25px;
       color: #aaa;
       font-style: normal;
-      line-height: 1.6;
+      line-height: 1.7;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
+      font-size: 1.05rem;
     }
 
-    /* Responsive */
+    /* Responsive Design */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 2.1rem;
       }
 
       .emerald-container {
-        width: 180px;
-        height: 180px;
-        margin: 30px auto;
+        width: 200px;
+        height: 200px;
       }
 
       .emerald-container img {
-        max-width: 180px;
+        max-width: 200px;
       }
 
       .content h2 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
       }
 
       .emerald-box {
-        width: 160px;
+        width: 170px;
       }
 
       .emerald-box img {
-        height: 160px;
+        height: 170px;
       }
     }
 
     @media (max-width: 480px) {
       header img {
-        height: 65px;
+        height: 70px;
       }
 
       header h1 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
       }
 
       .emerald-container {
-        width: 150px;
-        height: 150px;
-        margin: 25px auto;
+        width: 160px;
+        height: 160px;
+        margin: 30px auto;
       }
 
       .emerald-container img {
-        max-width: 150px;
+        max-width: 160px;
       }
 
       .emerald-box {
-        width: 140px;
+        width: 150px;
       }
 
       .emerald-box img {
-        height: 140px;
+        height: 150px;
       }
 
       .social-icons a {
+        width: 50px;
+        height: 50px;
         font-size: 24px;
       }
     }
@@ -286,24 +317,27 @@
     </div>
   </header>
 
-  <!-- Rotating Emerald -->
-  <div class="emerald-container">
-    <img
-      src="c:\Users\user\Downloads\sigma web devlopment course\css\front-view-shining-bright-emerald-gemstone-illustration-dark-black-background-front-view-shining-bright-emerald-272358329.webp"
-      alt="Emerald Gemstone">
+  <!-- Rotating Emerald (PNG) -->
+  <div class="emerald-showcase">
+    <div class="emerald-container">
+      <!-- 🔹 YOUR PNG PATH HERE (I kept your local path but changed to .png) -->
+      <img
+        src="c:\Users\user\Downloads\sigma web devlopment course\css\emerald-gem.png"
+        alt="Premium Emerald Gemstone">
+    </div>
   </div>
 
   <!-- Content -->
   <div class="content">
-    <h2>Natural Emeralds - The Stone of Prosperity</h2>
+    <h2>Natural Emeralds — The Stone of Prosperity & Wisdom</h2>
     <p>
-      Welcome! Here you will find beautiful emeralds full of natural shine and charm. We offer gems that are carefully picked to bring you quality and elegance. Choose your favorite emerald and make your special moments more bright and memorable.
+      Welcome to Kadri Gems. We specialize in ethically sourced, natural emeralds renowned for their vivid color, clarity, and brilliance. Each gem is hand-selected for its unique character and timeless elegance—perfect for heirlooms, engagement rings, or meaningful gifts.
     </p>
   </div>
 
-  <!-- Emerald Boxes Section -->
+  <!-- Gemstone Gallery -->
   <section class="emerald-section">
-    <h2>All Type Gemstones Available</h2>
+    <h2>Exquisite Gemstone Collection</h2>
     <div class="emerald-boxes">
       <div class="emerald-box">
         <img src="https://www.jewelryimpressions.com/wp-content/uploads/emoval1500-1.jpg" alt="Oval Emerald">
@@ -311,11 +345,11 @@
       </div>
       <div class="emerald-box">
         <img src="https://i.ebayimg.com/images/g/weoAAOSwLRdmEcc0/s-l1600.png" alt="Zambian Emerald">
-        <h3>Emerald Zambian Round</h3>
+        <h3>Zambian Round</h3>
       </div>
       <div class="emerald-box">
         <img src="https://tse3.mm.bing.net/th/id/OIP.oa0zKgDEDHINUiYC7CUFvAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Octagon Emerald">
-        <h3>Octagon Emerald</h3>
+        <h3>Octagon Cut</h3>
       </div>
       <div class="emerald-box">
         <img src="https://digimonk.live/emralddev/public/storage/blogs/img-5754.JPG" alt="Panna Emerald">
@@ -326,14 +360,14 @@
 
   <!-- Footer -->
   <footer>
-    <p>Connect with us</p>
+    <p>Connect With Us</p>
     <div class="social-icons">
       <a href="https://wa.me/9468530738" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <a href="https://www.instagram.com/kadri_gems01?igsh=bjJobzh4Mm1uNHJp" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/share/1aoeijR86m/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
       <a href="mailto:Mohdtofikqadree@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
-    <address>Sayyed colony Gangapol road Jaipur Rajasthan</address>
+    <address>Sayyed Colony, Gangapol Road, Jaipur, Rajasthan</address>
   </footer>
 </body>
 </html>
