@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emerald Gems</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header img {
+      height: 90px;
+      margin-right: 35px;
+    }
+
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #111;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffb3;
+    }
+
+    .emerald-container {
+      position: relative;
+      text-align: center;
+      margin-top: 50px;
+      animation: rotate 20s linear infinite;
+    }
+
+    .emerald-container img {
+      width: 200px;
+      height: auto;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .content {
+      padding: 30px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #00ffb3;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+.emerald-boxes {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .emerald-boxes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+      color: #00ffb3;
+   }
+
+  .emerald-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .emerald-box {
+      background-color: #111;
+    width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .emerald-box:hover {
+    transform: translateY(-8px);
+  }
+
+  .emerald-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .emerald-box h3 {
+    padding: 15px;
+      color: #00ffb3;
+    
+  }
+
+ 
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #111;
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #00ffb3;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .emerald-container img {
+        width: 150px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <header>
+      <img
+        src="https://scontent.fjai8-1.fna.fbcdn.net/v/t1.15752-9/551178774_1557039032123548_3144479149731368252_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Iasja890daoQ7kNvwEEQL4O&_nc_oc=AdnW89ijKhjdY6YVPuKTGz8i99gESANadyJMPFZzIR15HmGyOTZzsAA6hCfAfdB5oYU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fjai8-1.fna&oh=03_Q7cD3QHiUDR1zNjqAjKRHW1zYRugk8Zk0rOIKIhWgRIH_wHavA&oe=68FB2166"
+        alt="emerald logo">
+      <h1>KADRI GEMS</h1>
+    </header>
+  </header>
+
+  <!-- Rotating Emerald -->
+  <div class="emerald-container">
+    <img
+      src="c:\Users\user\Downloads\sigma web devlopment course\css\front-view-shining-bright-emerald-gemstone-illustration-dark-black-background-front-view-shining-bright-emerald-272358329.webp"
+      alt="Emerald Gemstone">
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h2>Natural Emeralds - The Stone of Prosperity</h2>
+    <p>
+      welcome ! Here you will find beautiful emerald full of natural shine and charm . we offer gems that are carefully picked to bring you quality and elegance .choose your favorite emerald and make your special moments more bright and memorable.
+    </p>
+  </div>
+  <!-- section with emerald-box -->
+  <section class="emerald-stones">
+    <h2> All type gemstones available</h2>
+    </div>
+    <div class="emerald-boxes">
+      <div class="emerald-box">
+        <img src="https://www.jewelryimpressions.com/wp-content/uploads/emoval1500-1.jpg" alt="Oval Emerald">
+        <h3>oval emerald</h3>
+      </div>
+      <div class="emerald-box">
+        <img src="https://i.ebayimg.com/images/g/weoAAOSwLRdmEcc0/s-l1600.png" alt="zambian Emerald">
+        <h3>Emerald Zambian Round</h3>
+      </div>
+      <div class="emerald-box">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.oa0zKgDEDHINUiYC7CUFvAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Oval Emerald">
+        <h3>Octogun Emerald</h3>
+      </div>
+      <div class="emerald-box">
+        <img src="https://digimonk.live/emralddev/public/storage/blogs/img-5754.JPG" alt="Oval Emerald">
+        <h3>Panna Emerald</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Social Links -->
+  <footer>
+    <p>Connect with us</p>
+    <div class="social-icons">
+      <a href="https://wa.me/9468530738" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/kadri_gems01?igsh=bjJobzh4Mm1uNHJp" target="_blank" title="Instagram"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/1aoeijR86m/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="Mohdtofikqadree@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <address> address - Sayyed colony Gangapol road jaipur rajasthan</address>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
